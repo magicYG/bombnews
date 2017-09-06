@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+    <!--  ListView最左边的缩略图 -->
+    <LinearLayout android:id="@+id/thumbnail"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="3dip"
+                  android:layout_alignParentLeft="true"
+                  android:background="@drawable/image_button"
+                  android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/commit"/>
+
+    </LinearLayout>
+
+    <!-- 歌曲名-->
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <!-- 歌手名 -->
+    <TextView
+        android:id="@+id/list_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_title"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there and ..." />
+
+    <!-- 歌曲播放时间 -->
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/list_title"
+        android:gravity="right"
+        android:text="5:45"
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+
+
+
+    <LinearLayout android:id="@+id/thumbnailright"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="3dip"
+                  android:layout_marginTop="5dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_click"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/right_click"/>
+
+    </LinearLayout>
+    <!-- 进入播放 -->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/thumbnail"
+        android:layout_marginTop="5dp"
+        android:background="#000000"></View>
+</RelativeLayout>

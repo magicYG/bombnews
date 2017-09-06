@@ -1,0 +1,2 @@
+# bombnews
+news
